@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <title>Bottom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+      #contactus {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        font-weight: 700;
+        color: rgb(43, 43, 43);
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 120%;
+      }
+      #contactus > img {
+        width: 6%;
+        height: 6%;
+      }
+
+      #facebook > svg {
+        width: 20px;
+        height: 20px;
+      }
+      #instagram > svg {
+        width: 20px;
+        height: 20px;
+      }
+      #youtube > svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      #footer {
+        border-top: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        gap: 0px;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      #footer > div {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+      }
+      #followUs {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #footer > div > p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 19px;
+      }
+
+      #footer > div > a {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+
+        margin-top: 5px;
+        color: rgb(59, 50, 50);
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+
+      #footer > div button {
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+      }
+      #footer > div input {
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: 2px solid black;
+        margin-right: 10px;
+        height: 100%;
+      }
+      #footer #year {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+
+      /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+  background: #d7c8ab;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #d7c8ab;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #493c3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #493c3e;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #816a6e;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #c3b498;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #d7c8ab;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #493c3e;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #493c3e;
+  border: 0;
+  padding: 10px 28px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #c3b498;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="upperNav">Only for 6 hours: Flat 50% off on Masks</div>
+      <div id="bottomNav">
+        <div id="leftNav">
+          <div>
+            <h3 class="oblique">Glam Pearl Beauty DESIGN BY KELOMPOK 4</h3>
+              <select onchange="yes()" name="filter" id="filter" >
+                <option value=""></option>
+                <option value="Home">HOME</option>
+                <option value="profile">PROFILE</option>
+                <option value="hair care">HAIR CARE</option>
+                <option value="body care">BODY CARE</option>
+                <option value="nutrition">NUTRITION</option>
+                <option value="serum">SERUM</option>
+                <option value="moisturizers">MOISTURIZERS</option>
+                <option value="knowUsBatter">KNOW US BATTER</option>
+              </select>
+          </div>
+        </div>
+
+        <div id="centerNav">
+          <div>
+             <a href="index.html"> <img width="100%"; height="90px"; id="logo" src="Images/logo-transparant.png" alt="logo"></a>
+          </div>
+      </div>
+
+        <div id="rightNav">
+          <div>
+            <input type="text" placeholder="🔍 Search" />
+            <a href="https://goo.gl/maps/otJvknzRCEpctcWb6">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633"
+                alt=""
+              />
+            </a>
+            <a href="cart.html">
+              <svg
+                viewBox="-35 0 512 512.00102"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0"
+                ></path>
+              </svg>
+            </a>
+            <div>
+              <svg
+                onclick="what_to_show()"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <path
+                  d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240
+                        c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                ></path>
+                <path
+                  d="M297.833,301h-83.667C144.964,301,76.669,332.951,31,401.458V512h450V401.458C435.397,333.05,367.121,301,297.833,301z
+                        M451.001,482H451H61v-71.363C96.031,360.683,152.952,331,214.167,331h83.667c61.215,0,118.135,29.683,153.167,79.637V482z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function what_to_show() {
+        let len = JSON.parse(localStorage.getItem("login-data")) || [];
+        if (len.length > 0) {
+          window.location.href = "details.html";
+        } else {
+          window.location.href = "login.html";
+        }
+      }
+
+      function yes() {
+        let x = document.querySelector("#filter").value;
+        if(x==="Home"){
+        window.location.href = "Index.html";
+        }else if(x=="hair care"){
+            window.location.href = "HairCare.html";
+        }else if(x=="body care"){
+            window.location.href = "BodyCare.html";
+        }else if(x=="nutrition"){
+            window.location.href = "Nutrition.html";
+        }else if(x=="serum"){
+            window.location.href = "Serum.html";
+        }else if(x=="moisturizers"){
+            window.location.href = "Moisturizers.html";
+        }else if(x=="knowUsBatter"){
+            window.location.href ="aboutus.html";
+        }else if(x=="profile"){
+            window.location.href ="details.html";
+        }
+      }
+
+    </script>
+
+    <!-- <------------------------- NAVBAR END ----------------->
+
+    <div id="contactus">
+      <h1>Contact Us</h1>
+      <br />
+      <p>Message us on WhatsApp</p>
+
+      <p>
+        Business Hours: 9 am to 6:30 pm (Monday to Saturday)
+      </p>
+      <br />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/istockphoto-1280270505-170667a.png?v=1633437242"
+        alt=""
+      />
+      <br /><br />
+      <p>(021)-456–890</p>
+      <br />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Whatsapp-Black-Icon-PNG-Image_480x480.png?v=1591938885"
+        alt=""
+      />
+      <br /><br />
+      <p>(+62)822-6164-7819</p>
+      <br />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/email_PNG55_480x480.png?v=1591870855"
+        alt=""
+      />
+      <br /><br />
+      <a id="email" href="mailto:Marketing@glampearl.co.id">Marketing@glampearl.co.id</a>
+      <br />
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.276180059888!2d106.8062129647691!3d-6.227271795492172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1505c76d775%3A0xe8503eecf84be674!2sSudirman%20Central%20Busines%20District!5e0!3m2!1sid!2sid!4v1667985190528!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <br>
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kawasan Bisnis Perkantoran SCBD, District 8 SCBD Lot 28 lantai 60, Jl. Jend. Sudirman 
+                  kav 52-53 Lot. 28 District 8 SCBD, RT.5/RW.3, Senayan, Kec. Kebayoran. Baru, Kota Jakarta 
+                  Selatan, Daerah Khusus Ibukota Jakarta 12190.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a id="email" href="mailto:Marketing@glampearl.co.id">Marketing@glampearl.co.id</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(021)-456–890</p>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto">
+              <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                  <p></p>
+                </div>
+                <div class="m-7">
+                  <form action="https://api.web3forms.com/submit" method="POST" id="form" class="php-email-form">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          
+                    <br>
+                    <div class="mb-6" align="center">
+                      <b><label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label></b>
+                      <p><input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /></p>
+                    </div>
+                    <div class="mb-6" align="center">
+                      <b><label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label></b>
+                      <p><input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /></p>
+                    </div>
+                    <div class="mb-6" align="center">
+                      <b><label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label></b>
+                      <p><input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /></p>
+                    </div>
+                    <div class="mb-6" align="center">
+                      <b><label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label></b>
+                      <p><textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea></p>
+                    </div>
+                    <div class="mb-6" align="center">
+                      <b><button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"></b>
+                        Send Message
+                      </button>
+                      <br>
+                      <br>
+                    </div>
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>const form = document.getElementById("form");
+            const result = document.getElementById("result");
+            
+            form.addEventListener("submit", function (e) {
+              const formData = new FormData(form);
+              e.preventDefault();
+              var object = {};
+              formData.forEach((value, key) => {
+                object[key] = value;
+              });
+              var json = JSON.stringify(object);
+              result.innerHTML = "Please wait...";
+            
+              fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json"
+                },
+                body: json
+              })
+                .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                  } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                  }
+                })
+                .catch((error) => {
+                  console.log(error);
+                  result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                  form.reset();
+                  setTimeout(() => {
+                    result.style.display = "none";
+                  }, 5000);
+                });
+            });
+            </script>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <div id="footer">
+      <div>
+        <p>GET TO KNOW US</p>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="">EARTHCARE</a>
+        <a href="">AFFILIATE PROGRAM</a>
+        <a href="terms&condition.html">TERMS & CONDITION</a>
+        <a href="">REFUND & CANCELLATION</a>
+        <a href="">PRVACY POLICY</a>
+        <a href="">ORDER & SHIPPING</a>
+        <a href="">PAYMENT TERMS</a>
+        <a href="">TERMS AND SERVICE</a>
+        <a href="">REFUND POLICY</a>
+      </div>
+      <div>
+        <p>ALSO AVAILABLE ON</p>
+        <a href="https://www.tokopedia.com">TOKOPEDIA</a>
+        <a href="https://www.shoppe.co.id">SHOPPE</a>
+        <a href="https://www.lazada.co.id">LAZADA</a>
+        <a href="https://www.blibli.com">BLIBLI</a>
+        <a href="https://www.bukalapak.com">BUKALAPAK</a>
+    </div>
+    <div>
+        <p>STAY UPDATED</p>
+        <div>
+        <input type="email" placeholder="example@example.com"><button>SUBMIT</button>
+    </div>
+       <div id="followUs">
+        <p>FOLLOW US</p>
+        <a id="facebook" href="https://business.facebook.com"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 32 32">
+        <path fill="#444" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path>
+        </svg></a>
+        <a  id="instagram" href="https://www.instagram.com/glampearlbeauty">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32">
+        <path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path></svg></a>
+        <a id="youtube" href="https://www.youtube.com"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path></svg></a>
+       </div>
+        
+       <a id="email" href="mailto:Marketing@glampearl.co.id">Marketing@glampearl.co.id</a>
+       <p id="email">021- 456 – 890</p>
+       <a id="email">© 2023  Glam Pearl Beauty</a>
+    </div>
+    </div>
+  </body>
+</html>

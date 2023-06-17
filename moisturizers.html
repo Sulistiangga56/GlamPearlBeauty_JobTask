@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moisturizers</title>
+
+    <!-- Roboto font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Montserrat font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Star Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Adding CSS file to html file -->
+    <link rel="stylesheet" href="moisturizers.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="upperNav">Only for 6 hours: Flat 50% off on Masks</div>
+      <div id="bottomNav">
+        <div id="leftNav">
+          <div>
+            <h3 class="oblique">Glam Pearl Beauty DESIGN BY KELOMPOK 4</h3>
+              <select onchange="yes()" name="filter" id="filter" >
+                <option value=""></option>
+                <option value="Home">HOME</option>
+                <option value="profile">PROFILE</option>
+                <option value="hair care">HAIR CARE</option>
+                <option value="body care">BODY CARE</option>
+                <option value="nutrition">NUTRITION</option>
+                <option value="serum">SERUM</option>
+                <option value="moisturizers">MOISTURIZERS</option>
+                <option value="knowUsBatter">KNOW US BATTER</option>
+              </select>
+          </div>
+        </div>
+
+        
+        <div id="centerNav">
+          <div>
+             <a href="index.html"> <img width="100%"; height="90px"; id="logo" src="Images/logo-transparant.png" alt="logo"></a>
+          </div>
+      </div>
+
+        <div id="rightNav">
+          <div>
+            <input type="text" placeholder="🔍 Search" />
+            <a href="https://goo.gl/maps/otJvknzRCEpctcWb6">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633"
+                alt=""
+              />
+            </a>
+            <a href="cart.html">
+              <svg
+                viewBox="-35 0 512 512.00102"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0"
+                ></path>
+              </svg>
+            </a>
+            <div>
+              <svg
+                onclick="what_to_show()"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <path
+                  d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240
+                        c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                ></path>
+                <path
+                  d="M297.833,301h-83.667C144.964,301,76.669,332.951,31,401.458V512h450V401.458C435.397,333.05,367.121,301,297.833,301z
+                        M451.001,482H451H61v-71.363C96.031,360.683,152.952,331,214.167,331h83.667c61.215,0,118.135,29.683,153.167,79.637V482z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function what_to_show() {
+        let len = JSON.parse(localStorage.getItem("login-data")) || [];
+        if (len.length > 0) {
+          window.location.href = "details.html";
+        } else {
+          window.location.href = "login.html";
+        }
+      }
+
+      function yes() {
+        let x = document.querySelector("#filter").value;
+        if(x==="Home"){
+        window.location.href = "Index.html";
+        }else if(x=="hair care"){
+            window.location.href = "HairCare.html";
+        }else if(x=="body care"){
+            window.location.href = "BodyCare.html";
+        }else if(x=="nutrition"){
+            window.location.href = "Nutrition.html";
+        }else if(x=="serum"){
+            window.location.href = "Serum.html";
+        }else if(x=="moisturizers"){
+            window.location.href = "Moisturizers.html";
+        }else if(x=="knowUsBatter"){
+            window.location.href ="aboutus.html";
+        }else if(x=="profile"){
+            window.location.href ="details.html";
+        }
+      }
+    </script>
+
+    <!-- <------------------------- NAVBAR END ----------------->
+
+    <!-- <input type="button" value="Open a Popup Window" onclick="window.open('cart.html','popUpWindow','height=1500,width=1100,left=200,top=200,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');"> -->
+
+    <div id="topImage">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/collections/By-catagory-11_73cd9359-5cc9-46db-b538-22de93ec14a3_1512x.png?v=1648272494"
+        alt="Error"
+      />
+    </div>
+    <h1>MOISTURIZERS</h1>
+    <div id="allProd"></div>
+
+  </body>
+</html>
+
+<script src="moisturizers.js"></script>

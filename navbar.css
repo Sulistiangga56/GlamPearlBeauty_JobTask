@@ -1,0 +1,92 @@
+#navbar {
+  width: 103%;
+  height: 20vh;
+  margin-left: -1.5%;
+  border: 1px solid grey;
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(to right, #F29F05, #F2B138, #A63D17);
+  z-index: 1000;
+}
+#upperNav {
+  width: 100%;
+  height: 20%;
+  background-color: #50504b;
+  color: #ffa07a;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#bottomNav {
+  width: 94%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+#bottomNav > div {
+  height: 100%;
+  width: 33.33%;
+}
+#leftNav {
+  display: flex;
+  align-items: center;
+}
+#centerNav > div {
+  width: 92%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#centerNav > div > img {
+  width: 65%;
+  height: 70%;
+}
+#rightNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#rightNav > div {
+  width: 94%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rightNav > div > a {
+  text-align: center;
+}
+
+#rightNav > div > input {
+  height: 100%;
+  width: 300%;
+  border-radius: 7px;
+  border: 0.1px solid grey;
+  font-size: 120%;
+  color: grey;
+  margin-right: 10px;
+}
+
+svg {
+  width: 40%;
+  height: 80%;
+  cursor: pointer;
+}
+
+#navbar select {
+  width: 20px;
+}
+
+h3 {
+  font-size: 21px;
+  color: white;
+}
+
+.oblique {
+  font-style: oblique;
+  background: linear-gradient(to right, #F29F05, #F2B138);
+	background-clip: text;
+}

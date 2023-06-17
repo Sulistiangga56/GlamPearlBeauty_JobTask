@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+      /* BODY */
+
+      #aboutusBackground {
+        width: 100%;
+        height: 80vh;
+        border: 1px solid red;
+      }
+      h1 {
+        position: absolute;
+        top: 30vh;
+        left: 35vw;
+        text-align: center;
+      }
+
+      form {
+    width: auto;
+    margin:auto;
+    background: linear-gradient(to right, #F29F05, #F2B138, #A63D17);
+    text-align: center;
+    font-family: sans-serif;
+      }
+
+      #aboutus > p {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+
+      #aboutus2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 50px;
+      }
+      #aboutus2 > div {
+        width: 50%;
+        height: auto;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      #aboutus2 > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        box-sizing: border-box;
+        padding-right: 10%;
+      }
+      #aboutus2 > div > img {
+        width: 90%;
+      }
+
+      #aboutus3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 50px;
+      }
+      #aboutus3 > div {
+        width: 50%;
+        height: auto;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      #aboutus3 > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        box-sizing: border-box;
+        padding-right: 10%;
+      }
+      #aboutus3 > div > img {
+        width: 90%;
+      }
+
+      /* BOTTOM */
+
+      #facebook > svg {
+        width: 20px;
+        height: 20px;
+      }
+      #instagram > svg {
+        width: 20px;
+        height: 20px;
+      }
+      #youtube > svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      #footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        gap: 0px;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      #footer > div {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+      }
+      #followUs {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #footer > div > p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 19px;
+      }
+
+      #footer > div > a {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+
+        margin-top: 5px;
+        color: rgb(59, 50, 50);
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+
+      #footer > div button {
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+      }
+      #footer > div input {
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: 2px solid black;
+        margin-right: 10px;
+        height: 100%;
+      }
+      #footer #year {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+
+      #mainproject {
+        margin-top: 550px;
+      }
+
+      /*--- Team---*/
+.team {
+  background: #BC540F;
+  padding: 60px 0;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #493c3e;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #c50909;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <div id="navbar">
+      <div id="upperNav">Only for 6 hours: Flat 50% off on Masks</div>
+      <div id="bottomNav">
+        <div id="leftNav">
+          <div>
+            <h3 class="oblique">Glam Pearl Beauty DESIGN BY KELOMPOK 4</h3>
+              <select onchange="yes()" name="filter" id="filter" >
+                <option value=""></option>
+                <option value="Home">HOME</option>
+                <option value="profile">PROFILE</option>
+                <option value="hair care">HAIR CARE</option>
+                <option value="body care">BODY CARE</option>
+                <option value="nutrition">NUTRITION</option>
+                <option value="serum">SERUM</option>
+                <option value="moisturizers">MOISTURIZERS</option>
+                <option value="knowUsBatter">KNOW US BATTER</option>
+              </select>
+          </div>
+        </div>
+
+        <div id="centerNav">
+          <div>
+             <a href="index.html"> <img width="100%"; height="90px"; id="logo" src="Images/logo-transparant.png" alt="logo"></a>
+          </div>
+      </div>
+
+        <div id="rightNav">
+          <div>
+            <input type="text" placeholder="🔍 Search" />
+            <a href="https://goo.gl/maps/otJvknzRCEpctcWb6">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633"
+                alt=""
+              />
+            </a>
+            <a href="cart.html">
+              <svg
+                viewBox="-35 0 512 512.00102"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0"
+                ></path>
+              </svg>
+            </a>
+            <div>
+              <svg
+                onclick="what_to_show()"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <path
+                  d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240
+                        c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                ></path>
+                <path
+                  d="M297.833,301h-83.667C144.964,301,76.669,332.951,31,401.458V512h450V401.458C435.397,333.05,367.121,301,297.833,301z
+                        M451.001,482H451H61v-71.363C96.031,360.683,152.952,331,214.167,331h83.667c61.215,0,118.135,29.683,153.167,79.637V482z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function what_to_show() {
+        let len = JSON.parse(localStorage.getItem("login-data")) || [];
+        if (len.length > 0) {
+          window.location.href = "details.html";
+        } else {
+          window.location.href = "login.html";
+        }
+      }
+
+      function yes() {
+        let x = document.querySelector("#filter").value;
+        if(x==="Home"){
+        window.location.href = "Index.html";
+        }else if(x=="hair care"){
+            window.location.href = "HairCare.html";
+        }else if(x=="body care"){
+            window.location.href = "BodyCare.html";
+        }else if(x=="nutrition"){
+            window.location.href = "Nutrition.html";
+        }else if(x=="serum"){
+            window.location.href = "Serum.html";
+        }else if(x=="moisturizers"){
+            window.location.href = "Moisturizers.html";
+        }else if(x=="knowUsBatter"){
+            window.location.href ="aboutus.html";
+        }else if(x=="profile"){
+            window.location.href ="details.html";
+        }
+      }
+    </script>
+
+    <!-- <------------------------- NAVBAR END ----------------->
+
+    <!-- BODY -->
+
+    <div id="aboutus">
+      <form>
+        <br>
+      <h2 align="center" font-family="Montserrat">GLAM PEARL BEAUTY <br />THAT LOVE YOU BACK</h2>
+      <img
+        width="auto" 
+        height="auto"
+        id="aboutusBackground"
+        src="Images/logo-transparant.png"
+        alt=""
+      />
+      </div>
+    </form>
+      <form>
+        <br>
+      <h2 >VISSION GLAM PEARL BEAUTY</h2>
+      <p >
+        Menjadi perusahaan yang terpercaya yang menyediakan perawatan wajah yang berkualitas dengan menggunakan bahan alami.
+      </p>
+      <br>
+      <h2 >MISSION GLAM PEARL BEAUTY</h2>
+      <p>
+            1. Menyediakan produk skincare yang aman, berkualitas tinggi besar manfaat serta kegunaanya, sehat, bersih (higienis) dan aman dipakai oleh konsumen.
+      <br>  2. Memberikan pelayanan terbaik dan mengesankan untuk setiap konsumen.
+      <br>  3. Berkomitmen untuk membuat produk cruelty-free (not animal tested) dan berbahan alami.
+      <br>  4. Selalu berinovasi untuk menciptakan produk-produk skincaee yang unggul agar menjadi yang terbaik dan terdepan.
+      </p>
+    
+
+    <div id="aboutus2">
+      <div>
+        <img
+          src="Images/manfaat.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h3>MANFAAT</h3>
+        Inilah yang terjadi setelah menggunakan produk Glam Pearl Beauty :
+        <p>
+        <br>  -	Dapat Merawat kulit wajah
+        <br>  -	Dapat Mempercantik diri
+        <br>  -	Dapat Memudarkan noda hitam
+        <br>  -	Dapat Menunda penuaan dini
+        <br>  -	Dapat Menjaga kesehatan kulit
+        </p>
+      </div>
+    </div>
+
+    <div id="aboutus3">
+      <div>
+        <h3>PERTANYAAN PALING SERING :</h3>
+        <br />
+              1. Berapa sih harganya? Harga range produk kita Rp 30.000 – Rp 200.000
+        <br>  2. Kenapa orang lain harus membeli produk kita? Karena produk kita lebih unggul disbanding produk lain, produk kami lebih berkualitas dan aman digunakan untuk berbagai kulit baik kulit normal, berminyak, kering maupun sensitive, serta produk kami cruelty-free (not animal tested)
+        <br>  3. Apakah produk kami lebih baik dari competitor? Iya karena produk kami lebih baik dari competitor karena produk kami menggunakan bahan alami yang berkualitas tinggi 
+        <br>  4. Kenapa orang lain harus membeli produk kami sekarang? karena menjaga dan merawat diri dimulai sejak dini yang manfaatnya dapat kita rasakan di masa yang akan datang
+
+        </p>
+      </div>
+      <div>
+        <img
+          src="Images/sering.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="aboutus3">
+      <div>
+      <h3>BERAKTIVITAS LEBIH GIAT <br />MENJADI LEBIH CANTIK</h3>
+      <br />
+      <p>
+        Kami tidak menggunakan bahan-bahan yang akan menghambat umur panjang sumber daya alam kami, atau membahayakan teman-teman berbulu kami - baik itu habitat mereka atau hewan itu sendiri. Kami juga telah memulai program daur ulang untuk wadah kami. Hal-hal kecil itulah yang penting, dan setiap upaya kecil dapat diperhitungkan secara positif untuk menyelamatkan planet kita.
+      </p>
+    </div>
+      <div>
+        <img
+          src="Images/jadicantik.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="aboutus2">
+      <div>
+        <img
+          src="Images/katakantidak.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h3>KITA TAHU KAPAN HARUS MENGATAKAN TIDAK</h3>
+        <br />
+        <p>
+          Produk kami benar-benar bebas dari kejahatan, dan kami hanya menggunakan IFRA
+          wewangian bersertifikat dan minyak esensial. Kami mengatakan TIDAK untuk semua
+          bahan-bahan berikut :
+        </p>
+        <h4>
+          - Parabens (methyl, propyl, etc.) <br />
+          - Sulphates (SLS, SLES) <br />
+          - Alcohol (Ethanol) <br />
+          - PABA <br />
+          - Phthalates <br />
+          - Triclosan <br />
+          - Formaldehyde Donors <br />
+          - Heavy metals <br />
+          - Synthetic Dyes
+        </h4>
+      </div>
+    </div>
+
+    <form>
+      <br>
+    <h2 >FAQ :</h2>
+    <p>
+      1.	Produk dapat ditemukan dimana sih?
+      Jawaban: seluruh produk dapat dibeli di website kami dan di berbagai e-commerce, serta outlet di Jabodatabek.
+    <br>
+    <p> 
+      2.	Bagaimana cara menjadi reseller?
+      Jawaban: untuk menjadi reseller Glam Pearl Beauty anda hanya perlu melakukan pembelian sebanyak 30 pcs (produk dapat dicampur). Potongan harga reseller akan otomatis anda dapatkan di halaman check out apabila anda sudah melakukan pembelian sesuai dengan ketentuan.
+    <br>
+    <p>   
+      3.	Bagaimana saya tahu produk yang saya inginkan akan restock lagi?
+      Jawaban: anda bisa memasukan alamat email anda dalam box “notify me” yang tertera disamping produk. Dengan begitu, jika barang yang kamu inginkan back in stock kamu mendapatkan pemberitahuan by email.
+    <br>
+    <p>   
+      4.	Bagaiaman cara saya mengetahui cek status order melalui webiste?
+      Jawaban: anda bisa melacak statur order dengan klik link Track Order dengan memasukkan order id yang dikirim via email.
+    <br>
+    <p>   
+      5.	Saya dikirim barang yang salah, cara gantinya bagaimana ya?
+      Jawaban: anda dapat menghubungi customer service kami di whatsapp 082261647819 atau line @glampearlbeauty (with @) dengan menyertakan :
+      1.	Nomor order id
+      2.	Foto produk lengkan dengan bubble & plastic pembungkusnya
+      3.	Foto kertas item atau packing list yang ada di dalam setiap paket
+      4.	Foto depan paket dengan kertas tertulis berisi data penerima. 
+      
+    </p>
+
+    <br>
+    <div id="aboutus4">
+      <div>
+        <h2>
+          PENELITIAN KONSUMEN & KEBUTUHAN PEMENUHAN
+        </h2>
+        <p>
+          Kami selalu mendengarkan kebutuhan konsumen, dan memberikannya kepada tim ahli kimia terampil kami yang kemudian mengerjakan ide produk baru, solusi baru, penelitian tentang campuran, teknologi mutakhir, dan membuat prototipe.
+        </p>
+      </div>
+    </div>
+
+    <br>
+      <div>
+        <h2>PENGUJIAN & VALIDASI</h2>
+        <p>
+          Kami tidak terpengaruh oleh tren karena kami meluncurkan produk baru hanya di
+          menanggapi kebutuhan asli yang belum tertangani yang diungkapkan oleh pelanggan kami.
+          Dan hanya setelah penelitian ekstensif, kami memberikan formulasi dari
+          kualitas dan keamanan tertinggi. Semua produk kami dirilis hanya setelah a
+          standar penilaian kinerja tinggi terpenuhi.
+        </p>
+      </div>
+    </div>
+
+    <br>
+      <div>
+        <h2>PENILAIAN BAHAN & MATERIAL</h2>
+        <p>
+          Kami ingin menjadi yang terdepan, baik dalam teknologi yang kami gunakan maupun
+          ilmu yang kita masukkan. Bahan-bahan kami bersumber dari
+          pemasok paling terkenal dengan semua kepatuhan yang diperlukan diverifikasi
+          dan diperiksa. Hasilnya, produk kami berjanji untuk selalu menjadi
+          inovatif, lembut untuk digunakan dan memiliki dampak terendah pada
+          lingkungan.
+        </p>
+      </div>
+    </div>
+      
+    <br>
+      <div>
+        <h2>TRANSPARANSI LABEL</h2>
+        <p>
+          Kami memiliki hak untuk mengetahui apa yang masuk ke dalam produk. Daftar bahan-bahan kami dengan jelas dan konsisten sesuai dengan
+          standar yang ditetapkan. Produk kami telah teruji secara dermatologis untuk
+          menjadi 100% aman di kulit, dan aman untuk kehidupan. Kami dengan hati-hati merumuskan
+          setiap produk kami dengan "The Good Stuff" menggunakan sebanyak mungkin dari alam
+          mungkin.
+        </p>
+      </div>
+    </div>
+
+    <br>
+      <div>
+        <h2>PRODUKSI</h2>
+        <p>
+          Kami memilih untuk bekerja dengan rantai pasokan & mitra manufaktur kami
+          setelah studi menyeluruh tentang standar kualitas dan konsistensi mereka.
+          Kami mengevaluasi berdasarkan kepatuhan terhadap lingkungan, teknologi,
+          sanitasi dan standar etika.
+        </p>
+      </div>
+    </div>
+
+    <br>
+      <div>
+        <h2>KEMASAN</h2>
+        <p>
+          Membuat hal-hal indah setiap hari bagi kita; kami mendesain untuk menginspirasi sedikit
+          kegembiraan. Namun, pengembangan kemasan kami tidak hanya cantik untuk dilihat
+          pada. Kami juga memperhatikan komposisinya, dengan fokus pada tinta dan
+          bahan yang bertanggung jawab terhadap lingkungan dan menghilangkan
+          bahan yang menjadi perhatian.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>STRUKTUR TEAM</h2>
+          <h3>HARDWORKING <span>TEAM</span></h3>
+          <p>PRESENTED BY KELOMPOK 4</p>
+          <br>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <br>
+                <br>
+                <img src="Images/Nazua.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>NAZUA ASYA PRIYATNA - 2005311036</h4>
+                <span>OWNER</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <br>
+                <br>
+                <img src="Images/Radita.png" width="400px" height="400px" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>RADITA PUTRI NURAMADHIANI -  2005311070</h4>
+                <span>CEO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <br>
+                <br>
+                <img src="Images/Rachmat.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>RACHMAT GILANG MAULANA - 2005311008</h4>
+                <span>MANAJER PRODUKSI DAN PENGEMASAN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <br>
+                <br>
+                <img src="Images/Resti.png" width="400px" height="400px" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>RESTI NURI RAHMADANI - 2005311069</h4>
+                <span>MANAJER ADMINISTRASI DAN PEMASARAN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <br>
+                <br>
+                <img src="Images/Nurul.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>NURUL NABILA - 2005311074</h4>
+                <span>MANAJER KEUANGAN DAN PENJUALAN</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </form>
+    <!-- End Team Section -->
+
+    <!-- BOTTOM -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bottom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:ital,wght@1,300&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="bottomPart.css" />
+      </head>
+      <body>
+          <div id="footer">
+            <div>
+              <p>GET TO KNOW US</p>
+              <a href="aboutus.html">ABOUT US</a>
+              <a href="contactus.html">CONTACT US</a>
+              <a href="">EARTHCARE</a>
+              <a href="">AFFILIATE PROGRAM</a>
+              <a href="terms&condition.html">TERMS & CONDITION</a>
+              <a href="">REFUND & CANCELLATION</a>
+              <a href="">PRVACY POLICY</a>
+              <a href="">ORDER & SHIPPING</a>
+              <a href="">PAYMENT TERMS</a>
+              <a href="">TERMS AND SERVICE</a>
+              <a href="">REFUND POLICY</a>
+            </div>
+            <div>
+              <p>ALSO AVAILABLE ON</p>
+              <a href="https://www.tokopedia.com">TOKOPEDIA</a>
+              <a href="https://www.shoppe.co.id">SHOPPE</a>
+              <a href="https://www.lazada.co.id">LAZADA</a>
+              <a href="https://www.blibli.com">BLIBLI</a>
+              <a href="https://www.bukalapak.com">BUKALAPAK</a>
+          </div>
+          <div>
+              <p>STAY UPDATED</p>
+              <div>
+              <input type="email" placeholder="example@example.com"><button>SUBMIT</button>
+          </div>
+             <div id="followUs">
+              <p>FOLLOW US</p>
+              <a id="facebook" href="https://business.facebook.com"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 32 32">
+              <path fill="#444" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path>
+              </svg></a>
+              <a  id="instagram" href="https://www.instagram.com/glampearlbeauty">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32">
+              <path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path></svg></a>
+              <a id="youtube" href="https://www.youtube.com"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path></svg></a>
+             </div>
+              
+             <a id="email" href="mailto:Marketing@glampearl.co.id">Marketing@glampearl.co.id</a>
+             <p id="email">021- 456 – 890</p>
+             <a id="email">© 2023  Glam Pearl Beauty</a>
+          </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Details</title>
+    <style>
+      #contDetails {
+        width: 40%;
+        margin: auto;
+        margin-top: 40px;
+      }
+      #contDetails > img {
+        width: 50%;
+        margin-left: 27%;
+      }
+      #contDetails > h1 {
+        font-size: 170%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(105, 105, 105);
+      }
+      label {
+        font-size: 130%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(65, 65, 65);
+      }
+      input {
+        width: 90%;
+        padding: 10px 10px;
+        font-size: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+      }
+      input:hover {
+        border: 2px solid rgb(243, 171, 36);
+      }
+      #check1,
+      #check2 {
+        width: auto;
+        padding: 5px;
+      }
+      button {
+        padding: 8px;
+        background-color: rgb(243, 171, 36);
+        border: transparent;
+        border-radius: 7px 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(19, 19, 19);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contDetails">
+      <img
+        src="Images/logo-transparant.png"
+        alt="Glam Pearl Beauty"
+      />
+      <h1>Add Contact Details</h1>
+      <label for="">Email Address</label><br />
+      <input
+        type="email"
+        placeholder="Add your Email"
+        id="email"
+        required
+      /><br />
+      <label for="">Address</label><br />
+      <input
+        type="text"
+        placeholder="Add your Shipping Address"
+        id="add"
+        required
+      /><br />
+      <label for="">Mobile Number</label><br />
+      <input
+        type="text"
+        placeholder="Add your Mobile number"
+        id="num"
+        required
+      /><br />
+      <input type="checkbox" id="check1" /><label for="">Cash on shipment</label
+      ><br />
+      <input type="checkbox" id="check2" /><label for=""
+        >Instant Payment using Card</label
+      ><br />
+      <hr
+        style="
+          width: 92%;
+          margin-left: 0px;
+          border: 2px solid rgb(243, 171, 36);
+        "
+      />
+      <button>Submit Contact Details</button>
+    </div>
+  </body>
+</html>
+<script>
+  // document.querySelector("#check1").addEventListener("click", function () {
+  //   window.location.href = "PaymentPage.html";
+  // });
+  document.querySelector("#check2").addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
+</script>
+
+<script>
+  document.querySelector("button").addEventListener("click", function () {
+    let Email = document.querySelector("#email").value;
+    let Add = document.querySelector("#add").value;
+    let Num = document.querySelector("#num").value;
+    let ContactDetails = [Email, Add, Num];
+    localStorage.setItem("ContactDetails", JSON.stringify(ContactDetails));
+    window.location.href = "PaymentPage.html";
+  });
+</script>
